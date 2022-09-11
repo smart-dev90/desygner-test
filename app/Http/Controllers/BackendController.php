@@ -36,7 +36,7 @@ class BackendController extends Controller
         $filename = Str::random(16).".".request()->file('file')->getClientOriginalExtension();
         request()->file('file')->move($_SERVER['DOCUMENT_ROOT'].'/upload/', $filename);
 
-        $photo->path = 'http://'.$_SERVER['REMOTE_ADDR'].'/upload/'.$filename;
+        $photo->path = 'http://'.$_SERVER['SERVER_ADDR'].'/upload/'.$filename;
         $photo->save();
 
         $tags = explode(',', request()->tags);
