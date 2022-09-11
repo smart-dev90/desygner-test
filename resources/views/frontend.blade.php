@@ -91,6 +91,7 @@
                                         clone.find('#js-div-tags').append($("<span>&nbsp;</span>"));
                                     }
                                     
+                                    clone.find("#js-div-photo").css('background-image', "url('" + result[i].path + "')")
 
                                     clone.show();
                                     $("div#js-div-photos").append(clone);
