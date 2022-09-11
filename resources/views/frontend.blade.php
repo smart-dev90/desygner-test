@@ -99,8 +99,9 @@
                             }
                         }
                     });
-
                 });
+
+                $("#js-btn-search").click();
             });
         </script>
     </body>
