@@ -16,6 +16,11 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-10 offset-md-1">
+                    <a href="/" class="btn btn-outline-success">Main Page</a>
+                </div>
+            </div>            
+            <div class="row mt-5">
+                <div class="col-md-10 offset-md-1">
                     <form method="post" action="{{ route('backend.doUrl') }}">
                         {{ csrf_field() }}
                         <h3 class="text-center">Upload Photo Here</h3>

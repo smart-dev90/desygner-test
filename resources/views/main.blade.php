@@ -16,7 +16,7 @@
             <div class="row" style="margin-top: 100px;">
                 <div class="col-md-4 offset-md-1">
                     <label><i>I would like to open Frontend</i></label>
-                    <button class="btn btn-primary btn-block">Frontend</button>
+                    <a href="{{ route('frontend.home') }}" class="btn btn-primary btn-block">Frontend</a>
                 </div>
 
                 <div class="col-md-4 offset-md-1">

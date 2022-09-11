@@ -15,6 +15,11 @@
     <body>
         <div class="container">
             <div class="row mt-5">
+                <div class="col-md-10 offset-md-1">
+                    <a href="/" class="btn btn-outline-success">Main Page</a>
+                </div>
+            </div>            
+            <div class="row mt-5">
                 <div class="col-md-3 offset-md-1">
                     <select class="form-control" id="js-provider" name="provider">
                         <option value="">- All provider -</option>
