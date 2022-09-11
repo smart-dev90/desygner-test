@@ -30,7 +30,7 @@ class BackendController extends Controller
         }
 
         $photo = new Photo();
-        $photo->name = request()->name;
+        $photo->provider = request()->provider;
         $photo->type = Photo::TYPE_UPLOAD;
 
         $filename = Str::random(16).".".request()->file('file')->getClientOriginalExtension();
@@ -71,7 +71,7 @@ class BackendController extends Controller
         }
 
         $photo = new Photo();
-        $photo->name = request()->name;
+        $photo->provider = request()->provider;
         $photo->type = Photo::TYPE_URL;
         $photo->path = request()->url;
         $photo->save();
